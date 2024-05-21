@@ -1,0 +1,50 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+    
+*@
+@model List<GetionTicket.Web.Models.Ticket.Ticket>
+
+<h1>Liste des tickets</h1>
+
+<table class="table">
+   <thead>
+      <tr>
+         <th>Status</th>
+         <th>Titre</th>
+         <th>Déscription</th>
+      </tr>
+   </thead>
+   <tbody>
+      @foreach (var ticket in Model)
+      {
+         <tr>
+            <td>@ticket.Status</td>
+            <td>@ticket.Title</td>
+            <td>@ticket.Description</td>
+            <td>
+               <form asp-action="DeleteTicket" method="post">
+                  <input type="hidden" name="idTicket" value="@ticket.Id" />
+                  <button type="submit" class="btn btn-danger">Supprimer</button>
+               </form>
+            </td>
+            <td>
+               <form asp-action="AssignTicket" method="post">
+                  <input type="hidden" name="idTicket" value="@ticket.Id" />
+                  <select name="userId_@ticket.Id">
+                     <!-- Added name attribute -->
+                     @foreach (var item in (List<GetionTicket.Web.Models.User.User>)ViewBag.Users)
+                     {
+                        <option value="@item.Id"> @item.UserName </option> <!-- Removed name attribute from option -->
+                     }
+                  </select>
+                  <button type="submit" class="btn btn-danger">Assigner</button>
+               </form>
+            </td>
+         </tr>
+      }
+   </tbody>
+</table>
+
+<!-- Bouton "Ajouter" -->
+<a asp-action="AddTicket" class="btn btn-primary">Ajouter</a>
+<a asp-action="Index" asp-controller="User" class="btn btn-primary">Gestion des Utilisateurs</a>

@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<GetionTicket.Web.Models.User.User>
+
+<h1>Liste des Utilisateurs</h1>
+
+<table class="table">
+   <thead>
+      <tr>
+         <th>Email</th>
+         <th>Utilisateur</th>
+      </tr>
+   </thead>
+   <tbody>
+      @foreach (var user in Model)
+      {
+         <tr>
+            <td>@user.Email</td>
+            <td>@user.UserName</td>
+            <td>
+               <form asp-action="DeleteUser" method="post">
+                  <input type="hidden" name="idUser" value="@user.Id" />
+                  <button type="submit" class="btn btn-danger">Supprimer</button>
+               </form>
+            </td>
+         </tr>
+      }
+   </tbody>
+</table>
+
+<!-- Bouton "Ajouter" -->
+<a asp-action="AddUser" class="btn btn-primary">Ajouter</a>
+<a asp-action="Index" asp-controller="Ticket" class="btn btn-primary">Gestion des Tickets</a>

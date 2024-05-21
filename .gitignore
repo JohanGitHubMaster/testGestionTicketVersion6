@@ -1,0 +1,160 @@
+# .NET
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb][Ii][Nn]/
+[Oo][Bb][Jj]/
+[Ll][Oo][Gg]s/
+[Nn][Cc][Cc][Dd][Ll][Ll]C/
+[Bb][Ii][Nn]/
+[Ii][Nn][Tt][Ee][Rr][Mm][Ee][Dd][Ii][Aa][Tt][Ee]/
+[Ss][Oo][Ll][Uu][Tt][Ii][Oo][Nn][Cc][Aa][Cc][Hh][Ee]/
+[Nn][Uu][Pp][Kk][Gg][Rr][Aa][Dd][Ee]/
+[Tt][Ee][Ss][Tt][Rr][Ee][Ss][Uu][Ll][Tt][Ss]/
+[Bb][Ll][Dd]/
+[Bb][Ii][Nn]/
+[Rr][Dd][Ll]/
+[Rr][Dd][Ll][Ll]/
+[Tt][Ee][Ss][Tt]/
+[Ii][Pp][Pp][Uu][Bb][Ll][Ii][Cc]/
+[Ii][Nn][Ff][Oo][Rr][Mm][Aa][Tt][Ii][Oo][Nn]/
+[Rr][Ee][Ss][Hh][Aa][Rr][Pp][Ee][Nn][Cc][Ee]/
+[Ss][Ss][Ll]_[Cc][Cc]_[Aa][Cc][Hh][Ee]/
+[Ss][Ss][Ll]_[Cc][Cc]_[Cc][Hh][Ee]_[Cc][Aa][Cc][Hh][Ee]/
+
+.svn/
+
+## Visual Studio files
+.vscode/
+*_i.c
+*_p.c
+*.suo
+*.user
+*.sln.docstates
+
+## User-specific files
+*.suo
+*.user
+*.suo
+*.user
+*.sln.docstates
+
+## Mono Auto Generated Files
+mono_crash.*
+
+## Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+## Folder config file
+Desktop.ini
+
+## Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+## VS Code directories
+.vscode/
+
+## Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+## Windows shortcuts
+*.lnk
+
+# ASP.NET
+obj/
+[Bb]in/
+[Rr]elease/
+[Ii]ntellisenseDocs/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+.idea/
+.vscode/
+.vs/
+*.suo
+*.user
+*.suo
+*.user
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Core
+bin/
+obj/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+wwwroot/
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.suo
+*.user
+*.suo
+*.user
+*.sln.docstates
+.suo
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
